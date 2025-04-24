@@ -1,8 +1,8 @@
 import express from 'express';
 import 'dotenv/config'
 import cors from "cors";
-import { allRoutes } from './router.js'; 
-import { obtenerDB } from './db/database.js';
+import { allRoutes } from './src/router.js'; 
+import { obtenerDB } from './src/db/database.js';
 
 
 const app = express();
