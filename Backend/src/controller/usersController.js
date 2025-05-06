@@ -29,7 +29,7 @@ export const loginController = async (req, res) => {
       return res.status(400).json({ message: "Se requiere email y contraseña" });
     }
 
-    const consulta = "SELECT * FROM clientes WHERE email=$1 AND password=$2";
+    const consulta = "SELECT * FROM usuarios WHERE email=$1 AND password=$2";
     const values = [email, password];
 
     const {rows, rowCount} = await db.query(consulta, values);
